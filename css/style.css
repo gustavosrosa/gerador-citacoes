@@ -22,7 +22,6 @@ body {
 }
 
 .container {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,4 +58,19 @@ body {
 .button-generate:hover {
     transition: calc(1s);
     background-color: var(--color-text-author);
+}
+
+/* Media queries */
+
+
+@media (min-width: 235px) and (max-width: 700px) {
+
+    .container {
+        margin: 5em 2em;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
 }
