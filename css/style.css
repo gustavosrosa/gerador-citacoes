@@ -1,5 +1,62 @@
+:root {
+    --background-main-color: #178E3E;
+    --background-button-generate-color: #062B06;
+    --color-text-author: #004007;
+    --color-principal-border: #9DD2A7;
+    --color-principal-text: #FFFFFF;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--background-main-color);
+    color: var(--color-principal-text);
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+    padding: 1em;
+    border: 2px solid var(--color-principal-border);
+    max-width: 40em;
+    min-height: 10em;
+    margin-top: 5em;
+}
+
+.text-principal {
+    font-weight: normal;
+}
+
+.quotation {
+    font-style: italic;
+}
+
+.author {
+    color: var(--color-text-author);
+}
+
+.button-generate {
+    width: 10em;
+    height: 3em;
+    border-radius: .5em;
+    font-size: 1.125em;
+    background-color: var(--background-button-generate-color);
+}
+
+.button-generate:hover {
+    transition: calc(1s);
+    background-color: var(--color-text-author);
 }
