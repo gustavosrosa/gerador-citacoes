@@ -30,6 +30,7 @@ body {
     gap: 2em;
     padding: 1em;
     border: 2px solid var(--color-principal-border);
+    border-radius: .5em;
     max-width: 40em;
     min-height: 10em;
     margin-top: 5em;
