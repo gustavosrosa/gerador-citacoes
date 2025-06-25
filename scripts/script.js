@@ -1,8 +1,8 @@
-function generateQuotation() {
+async function generateQuotation() {
 
-    access = configURL();
+    const access = configURL();
 
-    fetch(access.url, access.configAccess)
+    await fetch(access.url, access.configAccess)
     .then(
         response => {
             return response.json(); 
